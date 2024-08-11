@@ -68,7 +68,7 @@ app.get('/people', async (req, res) => {
 });
 
 
-await mongoose.connect(
+mongoose.connect(
   'mongodb://mongodb:27017/swfavorites',
   { useNewUrlParser: true },
   (err) => {
